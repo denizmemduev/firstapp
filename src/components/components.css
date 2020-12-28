@@ -1,0 +1,124 @@
+@font-face {
+  src: url(../fonts/MontserratAlternates-Black.ttf);
+  font-family: MontserratAlternates-Black;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+.navbar {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  user-select: none;
+  font-family: MontserratAlternates-Black;
+  transition: 0.5s;
+}
+.navbar a {
+  font-size: 23px;
+}
+
+.listitems {
+  display: list-item;
+  text-align: -webkit-match-parent;
+
+  display: block;
+  padding: 0.75rem 1.25rem;
+  background-color: #353941;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  color: white;
+  cursor: auto;
+}
+.listitems:hover {
+  background-color: #4b505b;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 300px;
+  background-color: rgba(255, 255, 255, 0);
+  color: white;
+  height: 300px;
+  transition: 0.3s;
+}
+
+.formout {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 75.5px;
+  background: rgb(3, 69, 112);
+  background: linear-gradient(
+    0deg,
+    rgba(3, 69, 112, 1) 0%,
+    rgba(12, 101, 168, 1) 95%,
+    rgba(14, 107, 181, 1) 98%
+  );
+}
+
+.formoutdisable {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 300px;
+  height: 300px;
+  opacity: 0.5;
+  user-select: none;
+  pointer-events: none;
+}
+
+.navlist {
+  position: fixed;
+  top: 75.5px;
+  z-index: 1;
+  width: 260px;
+  left: -260px;
+  transition: 0.5s;
+  overflow: hidden;
+  user-select: none;
+  height: 100%;
+  background-color: #353941;
+}
+
+.navlistclose {
+  position: fixed;
+  top: 75.5px;
+
+  z-index: 1;
+  width: 260px;
+  left: -2px;
+  transition: 0.5s;
+  height: 100%;
+  background-color: #353941;
+}
+
+.active {
+  display: list-item;
+  text-align: -webkit-match-parent;
+  position: relative;
+  display: block;
+  padding: 0.75rem 1.25rem;
+  background-color: #4b505b;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  color: white;
+  cursor: auto;
+}
+
+.carddss {
+  opacity: 0.5;
+  pointer-events: none;
+  user-select: none;
+}

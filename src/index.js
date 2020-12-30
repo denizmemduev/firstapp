@@ -7,6 +7,8 @@ import List from "./components/loginform";
 import Navigbar from "./components/navbar";
 import Navlist from "./components/navlist";
 import Cards from "./components/cards";
+import Menu from "./components/menu";
+import Footer from "./components/footer";
 
 ReactDOM.render(
   <List />,
@@ -27,15 +29,35 @@ ReactDOM.render(
 );
 
 ReactDOM.render(
-  <Cards text="You can visit my old site and you can use it for free educational and play games" />,
+  <Menu />,
+
+  document.getElementById("menu")
+);
+
+ReactDOM.render(
+  <Cards
+    text="You can visit DSoftwares's old website and you can use it for free."
+    buttons="Old Website"
+    header="DSoftwares.bg"
+  />,
 
   document.getElementById("card")
 );
 
 ReactDOM.render(
-  <Cards />,
+  <Cards
+    buttons="Services"
+    header="See our's services"
+    text="Order professional logo, website, mobile application and others for your business."
+  />,
 
   document.getElementById("card2")
+);
+
+ReactDOM.render(
+  <Footer />,
+
+  document.getElementById("footer")
 );
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

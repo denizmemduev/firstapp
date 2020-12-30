@@ -1,22 +1,20 @@
 import React, { Component } from "react";
 
 class Cards extends Component {
-  state = {
-    header: "DSoftwares.com",
-  };
+  state = {};
 
   render() {
     return (
-      <div className="cardds">
-        <div className="card" style={{ width: "50%", float: "left" }}>
+      <div className="cardds m-2">
+        <div className="card" style={{ width: "auto" }}>
           <div className="card-body">
-            <h5 className="card-title">Old site {this.state.header}</h5>
+            <h5 className="card-title">{this.props.header}</h5>
             <p className="card-text">{this.props.text}</p>
             <a
               href={"http://dsoftwares.epizy.com"}
               className="btn btn-secondary"
             >
-              Old website
+              {this.props.buttons}
             </a>
           </div>
         </div>

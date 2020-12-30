@@ -122,3 +122,33 @@
   pointer-events: none;
   user-select: none;
 }
+.nav-link {
+  color: gray;
+}
+.nav-link:hover {
+  color: black;
+}
+
+.formout a {
+  color: rgb(143, 143, 143);
+  transition: 0.2s;
+  margin: 7px;
+}
+.formout a:hover {
+  color: rgb(187, 185, 185);
+  text-decoration: none;
+}
+.ccc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: auto;
+}
+.jumbotron img {
+  float: left;
+  height: 150px;
+  width: 150px;
+  margin: 2px;
+}

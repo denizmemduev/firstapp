@@ -10,9 +10,8 @@ class Navlist extends Component {
           <li className="listitems">Projects</li>
           <li className="listitems">Gallery</li>
           <li className="listitems">Contacts</li>
-          <li className="listitems">Projects</li>
-          <li className="listitems">Gallery</li>
-          <li className="listitems">Contacts</li>
+          <li className="listitems">Games</li>
+          <li className="listitems">About</li>
         </ul>
       </div>
     );

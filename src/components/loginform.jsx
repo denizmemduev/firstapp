@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./components.css";
+
 class List extends Component {
   state = {
     usename: "denizmemdue",
@@ -13,7 +14,9 @@ class List extends Component {
       <div className="formout">
         <form className="form">
           <h1 className="h3 mb-3 fw-normal">Please sign in</h1>
-
+          <span className="input-group-addon">
+            <i className="glyphicon glyphicon-lock"></i>
+          </span>
           <input
             className="form-control m-1 w-100"
             type="text"
@@ -26,6 +29,8 @@ class List extends Component {
             placeholder="Type your password"
           />
           <button className="btn btn-dark btn-sms m-1 w-100">Sign in</button>
+
+          <a href={"dsoftwarws.com"}>Sign up</a>
         </form>
       </div>
     );

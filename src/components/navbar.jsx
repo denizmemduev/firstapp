@@ -9,6 +9,7 @@ $(document).ready(function () {
     $(".navlist").toggleClass("change_me navlistclose ");
     $(".form").toggleClass("change_me formoutdisable ");
     $(".cardds").toggleClass("change_me carddss ");
+    $(".jumbotron").toggleClass("change_me carddss ");
   });
 });
 
@@ -29,10 +30,12 @@ class Navigbar extends Component {
         >
           <span className="navbar-toggler-icon"></span>
         </button>
+
         <a
           className="navbar-brand mr-auto mr-lg-0 m-2 "
           href={"dsoftwares.com"}
         >
+          <div></div>
           DSoftwares.com
         </a>
       </nav>

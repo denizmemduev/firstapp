@@ -1,5 +1,21 @@
 import React, { Component } from "react";
 import "./components.css";
+import "./signup";
+import $ from "jquery";
+
+$(document).ready(function () {
+  $(".formout2").css({
+    display: "none",
+  });
+  $(".sgn").click(function signupp() {
+    $(".formout").css({
+      display: "none",
+    });
+    $(".formout2").css({
+      display: "flex",
+    });
+  });
+});
 
 class List extends Component {
   state = {
@@ -21,16 +37,16 @@ class List extends Component {
             className="form-control m-1 w-100"
             type="text"
             autoFocus="1"
-            placeholder={"Type your username"}
+            placeholder={"Type your Username"}
           />
           <input
             className="form-control m-1  w-100"
             type="password"
-            placeholder="Type your password"
+            placeholder="Type your Password"
           />
           <button className="btn btn-dark btn-sms m-1 w-100">Sign in</button>
 
-          <a href={"dsoftwarws.com"}>Sign up</a>
+          <div className="sgn">Create new account</div>
         </form>
       </div>
     );

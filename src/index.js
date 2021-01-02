@@ -4,6 +4,7 @@ import "./index.css";
 import "bootstrap/dist/css/bootstrap.css";
 import reportWebVitals from "./reportWebVitals";
 import List from "./components/loginform";
+import List1 from "./components/signup";
 import Navigbar from "./components/navbar";
 import Navlist from "./components/navlist";
 import Cards from "./components/cards";
@@ -14,6 +15,12 @@ ReactDOM.render(
   <List />,
 
   document.getElementById("root")
+);
+
+ReactDOM.render(
+  <List1 />,
+
+  document.getElementById("form1")
 );
 
 ReactDOM.render(
